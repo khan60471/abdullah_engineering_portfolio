@@ -1,26 +1,20 @@
-# Abdullah's Engineering Portfolio
+# Engr. Abdullah — Engineering Portfolio
 
-A responsive, single-page portfolio built with plain HTML and CSS for GitHub Pages.
+A responsive personal portfolio built with HTML and CSS for GitHub Pages.
 
-## Publish with GitHub Pages
+## Publish/update on GitHub Pages
 
-1. Create a GitHub repository named `YOUR-USERNAME.github.io` (replace with your actual GitHub username).
-2. Upload `index.html` to the repository root.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Choose branch `main` and folder `/(root)`, then save.
-6. Wait a few minutes and open `https://YOUR-USERNAME.github.io`.
+1. Open your existing GitHub Pages repository.
+2. Replace the existing `index.html` with this updated `index.html`.
+3. Commit the change to the branch configured in Settings → Pages (usually `main`).
+4. Wait a few minutes, then refresh your published website.
 
-## Before publishing
+## Before sharing publicly
 
-- Replace placeholder GitHub and LinkedIn URLs in `index.html`.
-- Replace `YOUR_EMAIL@example.com` with a professional email address.
-- Add the actual Virtual Eyes repository URL.
-- Confirm experience dates, titles, and responsibilities.
-- Add a CV only if you want it public; place it in `assets/Abdullah-CV.pdf` and uncomment the CV link.
-- Label planned projects as planned until they are completed.
-- Do not publish passport details, home address, private phone numbers, or confidential work information.
-
-## Editing
-
-Open `index.html` in a text editor or click the file on GitHub and choose the pencil icon. Save local changes and upload/commit them to the `main` branch. GitHub Pages will rebuild the site after changes are committed.
+- Replace `YOUR_EMAIL@example.com` with your professional email.
+- Replace the generic `https://github.com/` link with your GitHub profile or portfolio repository.
+- Add a project repository URL for Virtual Eyes when ready.
+- Verify dates, award names, certificates, and current employment status.
+- Keep planned projects labelled as planned until completed.
+- Update “incoming master's student” after enrolment is official.
+- Do not publish private identity documents, home address, or confidential employer information.

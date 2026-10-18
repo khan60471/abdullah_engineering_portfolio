@@ -3,250 +3,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Abdullah's engineering portfolio: AI, computer vision, embedded systems, and automation.">
+  <meta name="description" content="Engr. Abdullah: Electrical Engineer, Open Doors Scholarship Winner, incoming ITMO master's student interested in AI, computer vision, automation, robotics, and digital manufacturing.">
   <meta name="theme-color" content="#0b1220">
-  <title>Abdullah | Electrical Engineer</title>
+  <title>Engr. Abdullah | Electrical Engineer · AI · Automation</title>
   <style>
-    :root {
-      --bg: #0b1220; --panel: #111c2f; --panel2: #15233a; --text: #edf4ff;
-      --muted: #a8b6cb; --accent: #2dd4bf; --line: rgba(190,210,240,.14);
-      --max: 1120px;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0; background: radial-gradient(circle at 80% 0%, #142947 0, var(--bg) 38%);
-      color: var(--text); font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
-      line-height: 1.65;
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .wrap { width: min(var(--max), calc(100% - 40px)); margin: auto; }
-    header { position: sticky; top: 0; z-index: 5; background: rgba(11,18,32,.88); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
-    nav { display: flex; justify-content: space-between; align-items: center; gap: 18px; min-height: 70px; }
-    .brand { color: var(--text); font-weight: 800; letter-spacing: .02em; }
-    .navlinks { display: flex; gap: 20px; flex-wrap: wrap; font-size: .92rem; }
-    .navlinks a { color: var(--muted); }
-    .hero { padding: 92px 0 70px; display: grid; grid-template-columns: 1.4fr .8fr; gap: 42px; align-items: center; }
-    .eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: .16em; font-size: .78rem; font-weight: 800; }
-    h1 { font-size: clamp(2.8rem, 7vw, 5rem); line-height: 1.04; letter-spacing: -.055em; margin: 14px 0; }
-    h2 { font-size: clamp(1.7rem, 4vw, 2.5rem); line-height: 1.15; letter-spacing: -.03em; margin: 0 0 12px; }
-    h3 { margin: 0 0 8px; line-height: 1.3; }
-    p { color: var(--muted); }
-    .lead { font-size: 1.13rem; max-width: 690px; }
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
-    .btn { display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--line); padding: 11px 17px; border-radius: 10px; font-weight: 700; }
-    .btn.primary { background: var(--accent); color: #06201d; border-color: var(--accent); }
-    .profile-card, .card, .timeline-item { background: linear-gradient(145deg, var(--panel), rgba(17,28,47,.72)); border: 1px solid var(--line); border-radius: 18px; }
-    .profile-card { padding: 25px; }
-    .avatar { width: 72px; height: 72px; border-radius: 18px; display: grid; place-items: center; color: #06201d; background: var(--accent); font-size: 1.8rem; font-weight: 900; margin-bottom: 20px; }
-    .statgrid { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; margin-top: 20px; }
-    .stat { background: var(--panel2); border-radius: 12px; padding: 13px; }
-    .stat strong { display: block; font-size: 1.1rem; }
-    .stat span { color: var(--muted); font-size: .82rem; }
-    section { padding: 62px 0; border-top: 1px solid var(--line); }
-    .section-intro { max-width: 730px; margin-bottom: 28px; }
-    .grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; }
-    .card { padding: 22px; }
-    .card p { margin-bottom: 0; }
-    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
-    .tag { border: 1px solid var(--line); color: #c9d7e9; padding: 4px 9px; border-radius: 999px; font-size: .78rem; }
-    .status { display: inline-block; font-size: .73rem; font-weight: 800; border-radius: 999px; padding: 4px 9px; color: #c8fff7; background: rgba(45,212,191,.12); margin-bottom: 12px; }
-    .timeline { display: grid; gap: 14px; }
-    .timeline-item { padding: 20px 22px; }
-    .meta { font-size: .88rem; color: var(--accent); }
-    .skill-list { display: flex; flex-wrap: wrap; gap: 10px; }
-    .skill-list span { background: var(--panel2); border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px; color: #d8e4f4; }
-    .notice { border-left: 3px solid var(--accent); padding: 12px 16px; background: rgba(45,212,191,.06); border-radius: 0 10px 10px 0; color: var(--muted); }
-    footer { padding: 28px 0 40px; color: var(--muted); font-size: .9rem; }
-    @media (max-width: 760px) {
-      .hero { grid-template-columns: 1fr; padding-top: 62px; }
-      .grid { grid-template-columns: 1fr; }
-      nav { align-items: flex-start; padding: 16px 0; flex-direction: column; }
-      .navlinks { gap: 13px; }
-      section { padding: 48px 0; }
-    }
+    :root{--bg:#0b1220;--panel:#111c2f;--panel2:#15233a;--text:#edf4ff;--muted:#a8b6cb;--accent:#2dd4bf;--line:rgba(190,210,240,.14);--max:1120px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}
+    body{margin:0;background:radial-gradient(circle at 80% 0%,#142947 0,var(--bg) 38%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.65}
+    a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:5;background:rgba(11,18,32,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    nav{display:flex;justify-content:space-between;align-items:center;gap:18px;min-height:70px}
+    .brand{color:var(--text);font-weight:850;letter-spacing:.03em}.navlinks{display:flex;gap:17px;flex-wrap:wrap;font-size:.9rem}.navlinks a{color:var(--muted)}
+    .hero{padding:84px 0 68px;display:grid;grid-template-columns:1.35fr .8fr;gap:42px;align-items:center}
+    .eyebrow{color:var(--accent);text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800}
+    h1{font-size:clamp(2.7rem,7vw,4.9rem);line-height:1.04;letter-spacing:-.055em;margin:14px 0}
+    h2{font-size:clamp(1.7rem,4vw,2.45rem);line-height:1.15;letter-spacing:-.03em;margin:0 0 12px}h3{margin:0 0 8px;line-height:1.3}
+    p{color:var(--muted)}.lead{font-size:1.1rem;max-width:720px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);padding:10px 16px;border-radius:10px;font-weight:750}
+    .btn.primary{background:var(--accent);color:#06201d;border-color:var(--accent)}
+    .profile-card,.card,.timeline-item{background:linear-gradient(145deg,var(--panel),rgba(17,28,47,.72));border:1px solid var(--line);border-radius:18px}
+    .profile-card{padding:24px}.avatar{width:70px;height:70px;border-radius:18px;display:grid;place-items:center;color:#06201d;background:var(--accent);font-size:1.8rem;font-weight:900;margin-bottom:18px}
+    .statgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:11px;margin-top:18px}.stat{background:var(--panel2);border-radius:12px;padding:12px}.stat strong{display:block;font-size:1rem}.stat span{color:var(--muted);font-size:.8rem}
+    section{padding:58px 0;border-top:1px solid var(--line)}.section-intro{max-width:760px;margin-bottom:26px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{padding:21px}.card p{margin-bottom:0}
+    .tags,.skill-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.tag{border:1px solid var(--line);color:#c9d7e9;padding:4px 9px;border-radius:999px;font-size:.77rem}
+    .status{display:inline-block;font-size:.72rem;font-weight:800;border-radius:999px;padding:4px 9px;color:#c8fff7;background:rgba(45,212,191,.12);margin-bottom:11px}
+    .timeline{display:grid;gap:13px}.timeline-item{padding:19px 21px}.meta{font-size:.86rem;color:var(--accent)}
+    .skill-list span{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:8px 11px;color:#d8e4f4}
+    .notice{border-left:3px solid var(--accent);padding:12px 15px;background:rgba(45,212,191,.06);border-radius:0 10px 10px 0;color:var(--muted)}
+    .small{font-size:.88rem}.muted{color:var(--muted)}footer{padding:28px 0 40px;color:var(--muted);font-size:.9rem}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:58px}.grid{grid-template-columns:1fr}nav{align-items:flex-start;padding:15px 0;flex-direction:column}.navlinks{gap:12px}section{padding:45px 0}}
   </style>
 </head>
 <body>
-<header>
-  <nav class="wrap">
-    <a class="brand" href="#home">ABDULLAH<span style="color:var(--accent)">.</span></a>
-    <div class="navlinks">
-      <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a>
-      <a href="#education">Education</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
-    </div>
-  </nav>
-</header>
-
+<header><nav class="wrap">
+  <a class="brand" href="#home">ENGR. ABDULLAH<span style="color:var(--accent)">.</span></a>
+  <div class="navlinks"><a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#certifications">Certifications</a><a href="#awards">Awards</a><a href="#contact">Contact</a></div>
+</nav></header>
 <main>
   <div class="wrap hero" id="home">
     <div>
       <div class="eyebrow">Electrical Engineering · AI · Automation</div>
-      <h1>Engineering ideas into <span style="color:var(--accent)">intelligent solutions.</span></h1>
-      <p class="lead">I'm Abdullah, an Electrical Engineering graduate interested in computer vision, embedded systems, intelligent automation, and energy-efficient technologies. I build practical projects and explore how AI can solve real engineering problems.</p>
+      <h1>Building <span style="color:var(--accent)">intelligent</span> engineering solutions.</h1>
+      <p class="lead">Electrical Engineer and Open Doors Scholarship Winner, selected for a master's degree at ITMO University in Saint Petersburg, Russia. I am interested in Artificial Intelligence, Computer Vision, Automation, Robotics, Intelligent Manufacturing, and Digital Technologies.</p>
       <div class="actions">
-        <a class="btn primary" href="#projects">Explore projects ↓</a>
-        <a class="btn" href="#contact">Contact me</a>
+        <a class="btn primary" href="#projects">Explore my projects ↓</a>
         <a class="btn" href="https://www.linkedin.com/in/engr-abdullah-a7b11b251" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <!-- Add your CV file to the repository as assets/Abdullah-CV.pdf, then uncomment:
-        <a class="btn" href="assets/Abdullah-CV.pdf" target="_blank" rel="noopener">View CV</a>
-        -->
+        <a class="btn" href="#contact">Contact me</a>
       </div>
+      <p class="small">Based in Pakistan · Preparing for postgraduate study and research in intelligent automation.</p>
     </div>
     <aside class="profile-card">
-      <div class="avatar">A</div>
-      <div class="eyebrow">Current focus</div>
-      <h3>AI for real-world engineering</h3>
-      <p>Computer vision · Embedded systems · Control · EV technology · Digital manufacturing</p>
+      <div class="avatar">A</div><div class="eyebrow">Academic & technical focus</div>
+      <h3>AI, Automation & Digital Manufacturing</h3>
+      <p>Combining electrical engineering foundations with software, computer vision, embedded systems, networking, and intelligent technologies.</p>
       <div class="statgrid">
-        <div class="stat"><strong>UET Peshawar</strong><span>Electrical Engineering</span></div>
-        <div class="stat"><strong>Virtual Eyes</strong><span>Assistive technology project</span></div>
-        <div class="stat"><strong>Python + AI</strong><span>Software-first development</span></div>
-        <div class="stat"><strong>Research-minded</strong><span>Learning through projects</span></div>
+        <div class="stat"><strong>Open Doors</strong><span>Scholarship winner</span></div>
+        <div class="stat"><strong>ITMO University</strong><span>Incoming master's student</span></div>
+        <div class="stat"><strong>Virtual Eyes</strong><span>AI assistive technology</span></div>
+        <div class="stat"><strong>UET Peshawar</strong><span>BSc Electrical Engineering</span></div>
       </div>
     </aside>
   </div>
 
-  <section id="about">
-    <div class="wrap">
-      <div class="section-intro">
-        <div class="eyebrow">A little about me</div>
-        <h2>Electrical engineering with a software-first mindset.</h2>
-        <p>I completed a BSc in Electrical Engineering at the University of Engineering and Technology, Peshawar. My interests connect engineering fundamentals with Python, AI, embedded systems, and automation. I am especially interested in intelligent control, electric mobility, digital manufacturing, and efficient AI systems.</p>
-      </div>
-      <div class="notice">This website is a work in progress. Planned projects are clearly labelled so visitors can distinguish completed work from future goals.</div>
+  <section id="about"><div class="wrap">
+    <div class="section-intro"><div class="eyebrow">About</div><h2>Engineering, AI and intelligent manufacturing.</h2>
+      <p>I am an Electrical Engineering graduate from the University of Engineering and Technology, Peshawar, Pakistan, and an Open Doors Russian Scholarship Project winner. I have been selected for a master's degree at ITMO University, Saint Petersburg, in Automation of Technological Processes and Production, with a focus on Digital Technologies in Manufacturing.</p>
+      <p>My interests are at the intersection of Artificial Intelligence, Computer Vision, Automation, Robotics, Intelligent Manufacturing, and Digital Technologies. Alongside engineering, I have developed practical skills in Python, MATLAB, computer networking, CCNA concepts, telecommunications, and digital technologies.</p>
+      <p>During my master's studies, I aim to strengthen my research and technical expertise, participate in international research projects, develop intelligent automation solutions, publish research, and prepare for future PhD and international research opportunities in AI, Robotics, and Automation.</p>
     </div>
-  </section>
+    <div class="notice">Status: incoming master's student at ITMO University. Update this wording to “currently pursuing” after your enrolment is official.</div>
+  </div></section>
 
-  <section id="projects">
-    <div class="wrap">
-      <div class="section-intro">
-        <div class="eyebrow">Selected work</div>
-        <h2>Projects</h2>
-        <p>Each project should eventually include a clear problem statement, architecture, tools, screenshots or plots, results, limitations, and a link to its source repository.</p>
-      </div>
-      <div class="grid">
-        <article class="card">
-          <span class="status">Existing project</span>
-          <h3>Virtual Eyes: Smart Glasses for Blind and Visually Impaired People</h3>
-          <p>An assistive vision system using a Raspberry Pi 5, camera, computer vision, OCR, and speech output to describe visual information to the user.</p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">YOLOv8</span><span class="tag">OpenCV</span><span class="tag">Tesseract OCR</span><span class="tag">Text-to-speech</span></div>
-          <p><a href="https://github.com/" target="_blank" rel="noopener">Add project repository ↗</a></p>
-        </article>
-        <article class="card">
-          <span class="status">Planned</span>
-          <h3>Machine Learning for EV Battery State Estimation</h3>
-          <p>Use a suitable public dataset to investigate battery state-of-charge or state-of-health estimation, compare models, and report evaluation metrics.</p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Machine Learning</span><span class="tag">Data Visualization</span></div>
-        </article>
-        <article class="card">
-          <span class="status">Planned</span>
-          <h3>Electric Motor Control Simulation</h3>
-          <p>Study motor dynamics and controller performance using a documented simulation, with speed-response plots and a discussion of assumptions.</p>
-          <div class="tags"><span class="tag">Control Systems</span><span class="tag">Simulation</span><span class="tag">Signal Analysis</span></div>
-        </article>
-        <article class="card">
-          <span class="status">Planned</span>
-          <h3>AI-Based Industrial Motor Predictive Maintenance</h3>
-          <p>Analyze public sensor or vibration data to classify operating conditions and explore early fault detection.</p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">Signal Processing</span><span class="tag">ML</span></div>
-        </article>
-        <article class="card">
-          <span class="status">Long-term project idea</span>
-          <h3>Digital Twin for Energy-Efficient EV Propulsion</h3>
-          <p>A software-based model connecting vehicle energy use, battery behaviour, propulsion dynamics, and control strategies. Publish results only after building and validating the model.</p>
-          <div class="tags"><span class="tag">Digital Twin</span><span class="tag">EV Systems</span><span class="tag">Energy Efficiency</span></div>
-        </article>
-      </div>
+  <section id="projects"><div class="wrap">
+    <div class="section-intro"><div class="eyebrow">Selected work</div><h2>Projects</h2><p>Technical work with an emphasis on the problem, system design, tools, evidence, results, and lessons learned.</p></div>
+    <div class="grid">
+      <article class="card"><span class="status">Final-year project · 2023–2024</span><h3>Virtual Eyes: Smart Glasses for Blind and Visually Impaired People</h3>
+        <p>Developed an AI-powered wearable system to assist visually impaired individuals through real-time object detection, text recognition, and audio feedback. The system integrates a camera, microphone, and speakers with a Raspberry Pi 5.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">YOLOv8</span><span class="tag">MediaPipe</span><span class="tag">OpenCV</span><span class="tag">Pytesseract</span><span class="tag">NumPy</span><span class="tag">pyttsx3</span></div>
+        <p class="small" style="margin-top:14px">Associated with UET Peshawar. Add a public repository, demo, architecture diagram, and verified results when ready.</p>
+      </article>
+      <article class="card"><span class="status">Planned project</span><h3>Machine Learning for EV Battery State Estimation</h3><p>Use a suitable public dataset to investigate battery state-of-charge or state-of-health estimation, compare models, and report evaluation metrics.</p><div class="tags"><span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">Data Visualization</span></div></article>
+      <article class="card"><span class="status">Planned project</span><h3>Electric Motor Control Simulation</h3><p>Explore motor dynamics and controller performance through simulation, including response plots, assumptions, and a discussion of control behaviour.</p><div class="tags"><span class="tag">Control Systems</span><span class="tag">Simulation</span><span class="tag">MATLAB</span></div></article>
+      <article class="card"><span class="status">Planned project</span><h3>AI-Based Industrial Predictive Maintenance</h3><p>Analyze public sensor or vibration data to detect abnormal operating conditions and evaluate a machine-learning approach to fault classification.</p><div class="tags"><span class="tag">Python</span><span class="tag">Signal Processing</span><span class="tag">AI</span></div></article>
+      <article class="card"><span class="status">Long-term project idea</span><h3>Digital Twin for Intelligent Manufacturing</h3><p>Develop a software-based model that connects equipment behaviour, industrial data, and performance monitoring. Add the project after a working prototype and evaluation are complete.</p><div class="tags"><span class="tag">Digital Twin</span><span class="tag">Automation</span><span class="tag">Manufacturing</span></div></article>
     </div>
-  </section>
+  </div></section>
 
-  <section id="experience">
-    <div class="wrap">
-      <div class="section-intro">
-        <div class="eyebrow">Professional development</div>
-        <h2>Experience & training</h2>
-        <p>Use the entries below as a starting point. Add exact dates, role titles, verified responsibilities, and evidence where available.</p>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="meta">Six-month internship · Islamabad</div>
-          <h3>NECOP</h3>
-          <p>Worked with Arduino Mega 2560, GSM communication, a Nextion LCD, and microcontroller interfaces. Add a concise description of the system you built and your specific contribution.</p>
-        </div>
-        <div class="timeline-item">
-          <div class="meta">Field training and soft-skills training</div>
-          <h3>Pakistan Council of Research in Water Resources (PCRWR)</h3>
-          <p>Add the training dates, the technical activities you observed or completed, and the separate soft-skills training details.</p>
-        </div>
-        <div class="timeline-item">
-          <div class="meta">Six months · confirm dates and role</div>
-          <h3>WAPDA</h3>
-          <p>Add your department, location, dates, and actual responsibilities before publishing this entry.</p>
-        </div>
-        <div class="timeline-item">
-          <div class="meta">Professional development</div>
-          <h3>PEC and technical training</h3>
-          <p>Include your verified PEC registration or Graduate Engineer Trainee details, as appropriate, with dates and credential links where available.</p>
-        </div>
-      </div>
+  <section id="experience"><div class="wrap">
+    <div class="section-intro"><div class="eyebrow">Experience</div><h2>Engineering and technical experience</h2></div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="meta">June 2026 – Present · Gulberg, Islamabad</div><h3>Electrical Site Engineer · Cozmuler Engineering</h3><p>Electrical site engineering role. Add verified project details, site responsibilities, AutoCAD Electrical work, MEP coordination, and measurable contributions where applicable.</p><p class="small">Skills listed on LinkedIn: AutoCAD Electrical, Mechanical, Electrical and Plumbing (MEP).</p></div>
+      <div class="timeline-item"><div class="meta">January 2026 – July 2026 · Islamabad</div><h3>Trainee Engineer · Pakistan Engineering Council (PEC)</h3><p>Graduate Engineer Trainee experience. Add the actual department, activities, training outcomes, and certificate details based on your records.</p></div>
+      <div class="timeline-item"><div class="meta">January 2026 – May 2026 · Islamabad · On-site</div><h3>Embedded Systems Intern · National Electronics Complex of Pakistan (NECOP)</h3><p>Worked with Arduino Mega 2560, GSM communication, a Nextion LCD, and microcontroller interfaces. Technical topics included UART, I²C, and SPI. Add details of your own contribution and the system you worked on.</p></div>
+      <div class="timeline-item"><div class="meta">August 2023 – October 2023 · Khyber Pakhtunkhwa</div><h3>Summer Intern · PTCL</h3><p>Telecommunications and switching systems exposure. Add specific activities and responsibilities supported by your internship experience.</p></div>
     </div>
-  </section>
+  </div></section>
 
-  <section id="education">
-    <div class="wrap">
-      <div class="section-intro"><div class="eyebrow">Academic background</div><h2>Education</h2></div>
-      <div class="timeline">
-        <div class="timeline-item"><div class="meta">2020–2024</div><h3>BSc Electrical Engineering</h3><p>University of Engineering and Technology, Peshawar, Pakistan · CGPA: 3.00/4.00</p><p>Academic interests: communications, signal processing, embedded systems, AI, and automation.</p></div>
-        <div class="timeline-item"><div class="meta">2020</div><h3>FSc Pre-Engineering</h3><p>BISE Kohat · 928/1100</p></div>
-        <div class="timeline-item"><div class="meta">2018</div><h3>Matriculation, Science</h3><p>BISE Kohat · 891/1100</p></div>
-      </div>
-      <p class="notice">If you add your current or future ITMO master's studies, label the status accurately, for example “incoming,” “currently enrolled,” or “in progress.” Do not present an unfinished degree as completed.</p>
+  <section id="education"><div class="wrap">
+    <div class="section-intro"><div class="eyebrow">Education</div><h2>Academic background</h2></div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="meta">Selected for master's study · Saint Petersburg, Russia</div><h3>ITMO University</h3><p><strong>Automation of Technological Processes and Production</strong>, with a focus on Digital Technologies in Manufacturing. Open Doors Russian Scholarship Project winner. Current status: incoming master's student.</p></div>
+      <div class="timeline-item"><div class="meta">2020–2024</div><h3>BSc Electrical Engineering, Communication</h3><p>University of Engineering and Technology, Peshawar, Pakistan. CGPA: 3.00/4.00.</p></div>
+      <div class="timeline-item"><div class="meta">June 2018 – July 2020</div><h3>FSc Pre-Engineering</h3><p>Government Higher Secondary School Doaba · 928/1100 marks.</p></div>
+      <div class="timeline-item"><div class="meta">January 2016 – April 2018</div><h3>Matriculation, Science</h3><p>Al Madina Public School Torawari · 891/1100 marks.</p></div>
     </div>
-  </section>
+  </div></section>
 
-  <section id="skills">
-    <div class="wrap">
-      <div class="section-intro"><div class="eyebrow">Technical toolkit</div><h2>Skills & certifications</h2><p>Keep this list honest and specific. Move a skill to “working knowledge” only when you can explain or demonstrate it in an interview.</p></div>
-      <div class="skill-list">
-        <span>Python</span><span>OpenCV</span><span>YOLOv8</span><span>OCR</span><span>Arduino</span><span>GSM</span><span>UART / I²C / SPI</span><span>Signal Processing</span><span>Git & GitHub</span><span>Embedded Systems</span><span>Automation</span><span>Machine Learning (developing)</span><span>EV Systems (learning)</span>
-      </div>
-      <div class="grid" style="margin-top:20px">
-        <article class="card"><h3>Selected credentials</h3><p>CCNA: Introduction to Networks; Python PCAP; Mathematics for Machine Learning; Microsoft 365 Fundamentals; and relevant AI or engineering training.</p></article>
-        <article class="card"><h3>Awards & achievements</h3><p>Add verified scholarship or competition achievements, including your Open Doors result, with the exact track, year, and award status.</p></article>
-      </div>
-    </div>
-  </section>
+  <section id="skills"><div class="wrap">
+    <div class="section-intro"><div class="eyebrow">Technical toolkit</div><h2>Skills</h2><p>Skills and tools relevant to my engineering, embedded-systems, communication, and AI interests.</p></div>
+    <div class="skill-list"><span>Python</span><span>MATLAB</span><span>Computer Vision</span><span>YOLOv8</span><span>OpenCV</span><span>MediaPipe</span><span>Pytesseract OCR</span><span>NumPy</span><span>Text-to-Speech</span><span>Arduino Programming</span><span>Embedded Systems</span><span>GSM</span><span>UART / I²C / SPI</span><span>Computer Networking</span><span>CCNA Fundamentals</span><span>Telecommunications</span><span>Switching Systems</span><span>AutoCAD Electrical</span><span>MEP</span><span>Digital Technologies</span></div>
+  </div></section>
 
-  <section id="research">
-    <div class="wrap">
-      <div class="section-intro"><div class="eyebrow">Research direction</div><h2>Areas I want to explore</h2></div>
-      <div class="grid">
-        <article class="card"><h3>Efficient AI and computer vision</h3><p>Deploying useful vision models under real-world latency, compute, and power constraints.</p></article>
-        <article class="card"><h3>Intelligent control and electric mobility</h3><p>Simulation and data-driven approaches to motor control, battery estimation, and vehicle energy efficiency.</p></article>
-        <article class="card"><h3>Automation and digital manufacturing</h3><p>Connecting sensors, control, industrial data, and digital models to improve system monitoring.</p></article>
-        <article class="card"><h3>Assistive technology</h3><p>Building accessible systems that translate visual information into useful audio feedback.</p></article>
-      </div>
-      <p class="notice" style="margin-top:18px">These are research interests, not claims of published research. Add papers or preprints here only when you have a real, shareable output.</p>
+  <section id="certifications"><div class="wrap">
+    <div class="section-intro"><div class="eyebrow">Professional development</div><h2>Selected certifications & training</h2><p>Include links to credential pages or certificates where public sharing is permitted.</p></div>
+    <div class="grid">
+      <article class="card"><h3>Introduction to MATLAB Programming</h3><p>Massachusetts Institute of Technology (MIT) · Issued October 2026.</p></article>
+      <article class="card"><h3>Young Engineers Personality Development Program (YEPDP)</h3><p>National Defence University (NDU) · Issued July 2026 · Listed expiry July 2034.</p></article>
+      <article class="card"><h3>Generative AI Application Developer Certificate</h3><p>Pak Angels · Issued October 2025.</p></article>
+      <article class="card"><h3>Introduction to Networks</h3><p>Cisco Networking Academy · Issued December 2023.</p></article>
+      <article class="card"><h3>PCAP: Programming Essentials in Python</h3><p>Cisco Networking Academy · Certificate listed as expired June 2024. Keep the status as shown by the issuing provider.</p></article>
+      <article class="card"><h3>Microsoft 365 Fundamentals Specialization</h3><p>Coursera · Issued June 2023.</p></article>
+      <article class="card"><h3>English for Career Development</h3><p>Coursera · Issued February 2023.</p></article>
+      <article class="card"><h3>Freelancing</h3><p>DigiSkills.pk · Issued October 2023.</p></article>
     </div>
-  </section>
+  </div></section>
 
-  <section id="contact">
-    <div class="wrap">
-      <div class="section-intro"><div class="eyebrow">Let's connect</div><h2>Contact</h2><p>For research collaboration, engineering opportunities, or academic discussion, connect through the profiles below.</p></div>
-      <div class="actions">
-        <!-- Replace the placeholder URLs below with your real profile links. -->
-        <a class="btn primary" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
-        <a class="btn" href="https://www.linkedin.com/in/engr-abdullah-a7b11b251" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a class="btn" href="mailto:YOUR_EMAIL@example.com">Email me</a>
-      </div>
-      <p style="font-size:.9rem">Before publishing, replace the placeholder GitHub, LinkedIn, and email links. Avoid publishing your home address, passport details, or other private information.</p>
+  <section id="awards"><div class="wrap">
+    <div class="section-intro"><div class="eyebrow">Honors & awards</div><h2>Scholarships and achievements</h2></div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="meta">April 2026</div><h3>Winner · Open Doors Russian Scholarship Project</h3><p>Awarded the Diploma of the Winner in Applied Mathematics and Artificial Intelligence under the master's track in the Open Doors Russian Scholarship Project, organized by the Global Universities Association. Selected for master's study at ITMO University; the final university program is Automation of Technological Processes and Production, Digital Technologies in Manufacturing.</p></div>
+      <div class="timeline-item"><div class="meta">August 2021</div><h3>Ehsaas Undergraduate Scholarship Awardee · Electrical Engineering</h3><p>Awarded the fully funded Ehsaas Undergraduate Scholarship by HEC and UET Peshawar for the Electrical Engineering degree beginning in Fall 2020. The award covered tuition fees and an annual living allowance.</p></div>
+      <div class="timeline-item"><div class="meta">August 2020</div><h3>Stoori Da Pakhtunkhwa Scholarship · Top Twenty Position Holder</h3><p>Recognized by BISE Kohat for securing 8th position among government schools in the HSSC Science Group examination in 2020, with 928/1100 marks.</p></div>
     </div>
-  </section>
+  </div></section>
+
+  <section id="research"><div class="wrap">
+    <div class="section-intro"><div class="eyebrow">Research interests</div><h2>What I want to explore</h2></div>
+    <div class="grid">
+      <article class="card"><h3>Artificial Intelligence & Computer Vision</h3><p>Reliable vision systems, assistive AI, and efficient model deployment.</p></article>
+      <article class="card"><h3>Automation & Robotics</h3><p>Intelligent control, sensing, embedded systems, and robotic applications.</p></article>
+      <article class="card"><h3>Intelligent Manufacturing</h3><p>Digital technologies, industrial monitoring, data-driven optimization, and digital twins.</p></article>
+      <article class="card"><h3>Future PhD and research</h3><p>Building research skills through master's study, practical projects, collaboration, and publications grounded in validated work.</p></article>
+    </div>
+    <p class="notice" style="margin-top:18px">No publications are listed yet. Add a paper, preprint, or research report only when you have a genuine shareable output.</p>
+  </div></section>
+
+  <section id="contact"><div class="wrap">
+    <div class="section-intro"><div class="eyebrow">Contact</div><h2>Let's connect</h2><p>For engineering opportunities, academic discussion, research collaboration, or professional networking.</p></div>
+    <div class="actions">
+      <a class="btn primary" href="https://www.linkedin.com/in/engr-abdullah-a7b11b251" target="_blank" rel="noopener">LinkedIn profile ↗</a>
+      <a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn" href="mailto:YOUR_EMAIL@example.com">Email me</a>
+    </div>
+    <p class="small">Before publishing, replace the placeholder email and generic GitHub URL with your actual details. Do not publish private address, passport details, or confidential work information.</p>
+  </div></section>
 </main>
-
-<footer><div class="wrap">© <span id="year"></span> Abdullah · Built with HTML and CSS · Hosted with GitHub Pages</div></footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
-</html>
+<footer><div class="wrap">© <span id="year"></span> Engr. Abdullah · Built with HTML and CSS · Hosted on GitHub Pages</div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
