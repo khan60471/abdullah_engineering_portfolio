@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Engr. Abdullah | Electrical Engineer, AI &amp; Automation</title>
+<meta name="description" content="Electrical engineer and incoming Master's student at ITMO University working on AI, computer vision, robotics and intelligent manufacturing.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#eef1f4; --panel:#ffffff; --ink:#14213a; --muted:#4d5b73; --line:#c9d1dc;
+  --signal:#e4572e; --signal-ink:#b93a14; --box:#1f5eff;
+  --display:'Bricolage Grotesque','Helvetica Neue',Arial,sans-serif;
+  --body:'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0e1522; --panel:#16203280; --ink:#e8edf5; --muted:#9aa8bf; --line:#2a3750;
+    --signal:#ff7a4d; --signal-ink:#ff9a75; --box:#6c95ff;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.65 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--box);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.5rem}
+header.nav{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;height:3.5rem}
+.nav strong{font:800 1.1rem var(--display)}
+.nav nav{display:flex;gap:1.25rem;font-size:.95rem;overflow-x:auto}
+.nav nav a{text-decoration:none;color:var(--muted);white-space:nowrap}
+.nav nav a:hover{color:var(--ink)}
+
+/* Hero: a detection frame, as in the Virtual Eyes project */
+.hero{padding:4.5rem 0 4rem}
+.frame{position:relative;border:2px solid var(--box);padding:2.5rem 2rem 2.25rem;margin-top:1.5rem}
+.frame::before,.frame::after{content:"";position:absolute;width:14px;height:14px;background:var(--box)}
+.frame::before{left:-8px;bottom:-8px}.frame::after{right:-8px;bottom:-8px}
+.tag{position:absolute;top:-1.05rem;left:-2px;background:var(--box);color:#fff;font:500 .85rem var(--body);padding:.2rem .7rem}
+.tag.r{left:auto;right:-2px;background:var(--signal);color:#fff}
+.hero h1{font:800 clamp(2.6rem,8vw,5.6rem)/.98 var(--display);margin:0 0 1.25rem;letter-spacing:-.02em}
+.hero .role{font:500 clamp(1.1rem,2.4vw,1.4rem)/1.4 var(--display);max-width:34ch;margin:0 0 1.75rem}
+.hero .scan{position:absolute;left:0;right:0;height:2px;background:var(--signal);opacity:.0;animation:scan 2.4s ease-out .4s 1}
+@keyframes scan{0%{top:0;opacity:.9}100%{top:100%;opacity:0}}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.7rem 1.2rem;border:2px solid var(--ink);text-decoration:none;font-weight:500}
+.btn.main{background:var(--ink);color:var(--paper)}
+.btn:hover{background:var(--signal);border-color:var(--signal);color:#fff}
+.facts{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.5rem 0 0;padding:0;list-style:none}
+.facts li{border:1px solid var(--line);background:var(--panel);padding:.25rem .75rem;font-size:.9rem;color:var(--muted)}
+
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+h2{font:800 clamp(1.7rem,4vw,2.3rem)/1.1 var(--display);margin:0 0 2rem;letter-spacing:-.01em}
+h3{font:700 1.25rem/1.3 var(--display);margin:0 0 .25rem}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:3rem}
+.about p{margin:0 0 1rem;max-width:62ch}
+.skills h3{font-size:1rem;margin-top:1.1rem}
+.skills h3:first-child{margin-top:0}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:.5rem 0 0;padding:0;list-style:none}
+.chips li{background:var(--panel);border:1px solid var(--line);padding:.15rem .6rem;font-size:.9rem}
+
+.row{display:grid;grid-template-columns:11rem 1fr;gap:1.5rem;padding:1.4rem 0;border-bottom:1px solid var(--line)}
+.row:first-of-type{padding-top:0}
+.row time{color:var(--muted);font-size:.95rem}
+.row p{margin:.35rem 0 0;max-width:62ch;color:var(--muted)}
+.row .org{color:var(--signal-ink);font-weight:500}
+
+.project{background:var(--panel);border:2px solid var(--ink);padding:2rem}
+.project h3{font-size:1.6rem}
+.project p{max-width:66ch}
+.project .meta{color:var(--muted);font-size:.95rem}
+
+.awards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem}
+.award{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--signal);padding:1.4rem}
+.award.top{grid-column:1/-1;border-top-color:var(--box)}
+.award p{margin:.4rem 0 0;color:var(--muted);font-size:1rem}
+.award .when{font-size:.9rem;color:var(--signal-ink);font-weight:500}
+
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 3rem;margin:0;padding:0;list-style:none}
+.certs li{padding:.8rem 0;border-bottom:1px solid var(--line)}
+.certs b{display:block;font-weight:500}
+.certs span{color:var(--muted);font-size:.92rem}
+
+.contact p{max-width:52ch;margin:0 0 1.5rem}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+
+@media (max-width:760px){
+  .about{grid-template-columns:1fr;gap:2rem}
+  .row{grid-template-columns:1fr;gap:.25rem}
+  .frame{padding:2.25rem 1.1rem 1.75rem}
+  .nav strong{display:none}
+}
+@media (prefers-reduced-motion:reduce){.hero .scan{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <strong>Engr. Abdullah</strong>
+    <nav aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#project">Project</a>
+      <a href="#awards">Awards</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <div class="frame">
+      <span class="tag">engineer 0.98</span>
+      <span class="tag r">ITMO 2026</span>
+      <span class="scan" aria-hidden="true"></span>
+      <h1>Engr. Abdullah</h1>
+      <p class="role">Electrical engineer building toward intelligent automation, computer vision and robotics.</p>
+      <div class="btns">
+        <a class="btn main" href="#project">See my project</a>
+        <a class="btn" href="https://www.linkedin.com/in/engr-abdullah-a7b11b251/" target="_blank" rel="noopener">LinkedIn profile</a>
+      </div>
+      <ul class="facts">
+        <li>Open Doors Scholarship winner</li>
+        <li>Incoming Master's student, ITMO University, Saint Petersburg</li>
+        <li>Peshawar, Pakistan</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <h2>About</h2>
+      <p>I have been selected for a Master's degree at ITMO University in Saint Petersburg, Russia, in Automation of Technological Processes and Production, with a focus on Digital Technologies in Manufacturing.</p>
+      <p>My interests sit at the intersection of artificial intelligence, computer vision, automation, robotics and intelligent manufacturing.</p>
+      <p>During my Master's I want to build strong research and technical expertise, join international research projects, develop intelligent automation solutions and publish. The longer goal is a PhD and international research work in AI, robotics and automation.</p>
+    </div>
+    <div class="skills">
+      <h2>Skills</h2>
+      <h3>Programming</h3>
+      <ul class="chips"><li>Python</li><li>MATLAB</li><li>Arduino</li></ul>
+      <h3>AI and vision</h3>
+      <ul class="chips"><li>YOLOv8</li><li>OpenCV</li><li>MediaPipe</li><li>Generative AI</li></ul>
+      <h3>Systems and networks</h3>
+      <ul class="chips"><li>Embedded systems</li><li>Raspberry Pi</li><li>CCNA</li><li>Telecommunications</li></ul>
+      <h3>Engineering tools</h3>
+      <ul class="chips"><li>AutoCAD Electrical</li><li>MEP design</li><li>Microsoft 365</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <div class="row">
+      <time>Jun 2026 to present</time>
+      <div>
+        <h3>Electrical Site Engineer</h3>
+        <span class="org">Cozmuler Engineering, Gulberg, Islamabad</span>
+        <p>Site-level electrical work using AutoCAD Electrical and MEP (mechanical, electrical, plumbing) coordination.</p>
+      </div>
+    </div>
+    <div class="row">
+      <time>Jan 2026 to Jul 2026</time>
+      <div>
+        <h3>Trainee Engineer</h3>
+        <span class="org">Pakistan Engineering Council, Islamabad</span>
+        <p>Internship completed with a GET certificate.</p>
+      </div>
+    </div>
+    <div class="row">
+      <time>Jan 2026 to May 2026</time>
+      <div>
+        <h3>Embedded Systems Intern</h3>
+        <span class="org">National Electronics Complex, Islamabad (on-site)</span>
+        <p>Hands-on embedded systems and Arduino programming.</p>
+      </div>
+    </div>
+    <div class="row">
+      <time>Aug 2023 to Oct 2023</time>
+      <div>
+        <h3>Summer Intern</h3>
+        <span class="org">PTCL, Khyber Pakhtunkhwa (on-site)</span>
+        <p>Exposure to telecommunications and switching systems.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="project">
+  <div class="wrap">
+    <h2>Featured project</h2>
+    <article class="project">
+      <h3>Virtual Eyes: smart glasses for the blind</h3>
+      <p class="meta">Sep 2023 to Aug 2024 · University of Engineering &amp; Technology Peshawar · with Khair Ul</p>
+      <p>An AI-powered wearable that helps visually impaired people through real-time object detection, text recognition and audio feedback. A camera, microphone and speakers are built into the glasses frame, and everything runs on a Raspberry Pi 5.</p>
+      <ul class="chips">
+        <li>Raspberry Pi 5</li><li>YOLOv8</li><li>MediaPipe</li><li>OpenCV</li><li>Pytesseract</li><li>NumPy</li><li>pyttsx3 text-to-speech</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="awards">
+  <div class="wrap">
+    <h2>Honors and awards</h2>
+    <div class="awards">
+      <div class="award top">
+        <span class="when">Apr 2026</span>
+        <h3>Winner, Open Doors Russian Scholarship Project</h3>
+        <p>Diploma of the Winner in Applied Mathematics and Artificial Intelligence, Master's track. Organized by the "Global Universities" Association.</p>
+      </div>
+      <div class="award">
+        <span class="when">Aug 2021</span>
+        <h3>Ehsaas Undergraduate Scholarship</h3>
+        <p>Fully funded by the Higher Education Commission (HEC) and UET Peshawar for Electrical Engineering, awarded on academic merit. Covered tuition plus an annual living allowance.</p>
+      </div>
+      <div class="award">
+        <span class="when">Aug 2020</span>
+        <h3>Stoori Da Pakhtunkhwa Scholarship</h3>
+        <p>Merit award from BISE Kohat for 8th position among government schools in the HSSC Science Group exam, with 928 of 1100 marks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2>Education</h2>
+    <div class="row">
+      <time>Starting 2026</time>
+      <div>
+        <h3>MSc, Automation of Technological Processes and Production</h3>
+        <span class="org">ITMO University, Saint Petersburg, Russia</span>
+        <p>Focus: Digital Technologies in Manufacturing.</p>
+      </div>
+    </div>
+    <div class="row">
+      <time>2020 to 2024</time>
+      <div>
+        <h3>BSc, Electrical Engineering (Communication)</h3>
+        <span class="org">University of Engineering &amp; Technology Peshawar</span>
+        <p>Coursework and projects in Python and artificial intelligence.</p>
+      </div>
+    </div>
+    <div class="row">
+      <time>2018 to 2020</time>
+      <div>
+        <h3>FSc, Pre-Engineering</h3>
+        <span class="org">Govt Higher Secondary School Doaba</span>
+        <p>928 marks.</p>
+      </div>
+    </div>
+    <div class="row">
+      <time>2016 to 2018</time>
+      <div>
+        <h3>Matric, Science</h3>
+        <span class="org">Al Madina Public School Torawari</span>
+        <p>891 marks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="wrap">
+    <h2>Licenses and certifications</h2>
+    <ul class="certs">
+      <li><b>Introduction to MATLAB Programming</b><span>Massachusetts Institute of Technology · Oct 2026</span></li>
+      <li><b>Young Engineers Personality Development Program (YEPDP)</b><span>National Defence University · Jul 2026</span></li>
+      <li><b>Generative AI Application Developer Certificate</b><span>Pak Angels · Oct 2025</span></li>
+      <li><b>Introduction to Networks (CCNAv7)</b><span>Cisco Networking Academy · Dec 2023</span></li>
+      <li><b>Freelancing</b><span>DigiSkills.pk · Oct 2023</span></li>
+      <li><b>Microsoft 365 Fundamentals Specialization</b><span>Coursera · Jun 2023</span></li>
+      <li><b>English for Career Development</b><span>Coursera · Feb 2023</span></li>
+      <li><b>PCAP: Programming Essentials in Python</b><span>Cisco Networking Academy</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>I am open to research collaborations and international projects in AI, robotics and automation. The quickest way to reach me is LinkedIn.</p>
+    <a class="btn main" href="https://www.linkedin.com/in/engr-abdullah-a7b11b251/" target="_blank" rel="noopener">Message me on LinkedIn</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Engr. Abdullah. Peshawar, Khyber Pakhtunkhwa, Pakistan.</div>
+</footer>
+
+</body>
+</html>
