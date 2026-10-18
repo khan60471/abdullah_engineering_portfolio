@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Engr. Abdullah | Electrical Engineer · AI &amp; Automation</title>
+<meta name="description" content="Electrical engineer and incoming Master's student at ITMO University focused on AI, computer vision, robotics and intelligent manufacturing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0a1628; --navy2:#12233f; --blue:#2563eb; --cyan:#22b8d9; --bg:#f6f8fb; --card:#fff;
+  --ink:#0f172a; --muted:#5b6b82; --line:#e2e8f0;
+  --font:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{font:400 1rem/1.7 var(--font);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 1.5rem}
+
+/* Nav */
+.nav{position:sticky;top:0;z-index:10;background:rgba(10,22,40,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:4rem;gap:1rem}
+.logo{color:#fff;font-weight:800;text-decoration:none;font-size:1.1rem;letter-spacing:-.01em}
+.logo span{color:var(--cyan)}
+.nav nav{display:flex;gap:.25rem;overflow-x:auto}
+.nav nav a{color:#b8c4d8;text-decoration:none;font-size:.92rem;font-weight:500;padding:.45rem .8rem;border-radius:8px;white-space:nowrap}
+.nav nav a:hover{color:#fff;background:rgba(255,255,255,.08)}
+
+/* Hero */
+.hero{background:radial-gradient(1000px 500px at 85% 0%,rgba(37,99,235,.35),transparent 60%),linear-gradient(180deg,var(--navy),var(--navy2));color:#fff;padding:5rem 0 6rem}
+.hero .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:3rem;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(34,184,217,.12);color:#8be3f5;border:1px solid rgba(34,184,217,.35);padding:.35rem .9rem;border-radius:999px;font-size:.85rem;font-weight:600;margin-bottom:1.5rem}
+.hero h1{font-size:clamp(2.4rem,6vw,4rem);line-height:1.05;font-weight:800;letter-spacing:-.03em;margin-bottom:.9rem}
+.hero h2{font-size:clamp(1.1rem,2.4vw,1.45rem);font-weight:500;color:#9fb3d1;margin-bottom:1.25rem}
+.hero p.lead{color:#c3cfe3;max-width:56ch;margin-bottom:2rem;font-size:1.05rem}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.4rem;border-radius:10px;font-weight:600;text-decoration:none;font-size:.97rem;border:1.5px solid transparent;transition:transform .15s,background .15s}
+.btn.primary{background:var(--blue);color:#fff}
+.btn.primary:hover{background:#1d4fd8;transform:translateY(-1px)}
+.btn.ghost{border-color:rgba(255,255,255,.3);color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.photo{justify-self:center;width:min(300px,70vw);aspect-ratio:1;border-radius:50%;padding:6px;background:conic-gradient(from 200deg,var(--blue),var(--cyan),var(--blue));box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.photo div{width:100%;height:100%;border-radius:50%;background:var(--navy2);display:grid;place-items:center;overflow:hidden;position:relative;font-size:5rem;font-weight:800;color:#8be3f5}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* Stats */
+.stats{margin-top:-3rem;position:relative;z-index:2}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.stat{background:var(--card);border-radius:14px;padding:1.4rem;text-align:center;box-shadow:0 10px 30px rgba(15,23,42,.08);border:1px solid var(--line)}
+.stat b{display:block;font-size:2rem;font-weight:800;color:var(--blue);line-height:1.1}
+.stat span{color:var(--muted);font-size:.9rem}
+
+/* Sections */
+section{padding:5rem 0}
+section.alt{background:#fff;border-block:1px solid var(--line)}
+.head{margin-bottom:2.5rem}
+.head h2{font-size:clamp(1.8rem,4vw,2.4rem);font-weight:800;letter-spacing:-.02em}
+.head p{color:var(--muted);margin-top:.4rem;max-width:60ch}
+.head::after{content:"";display:block;width:56px;height:4px;border-radius:4px;background:linear-gradient(90deg,var(--blue),var(--cyan));margin-top:1rem}
+
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:3rem}
+.about p{color:#33425a;margin-bottom:1rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.6rem;box-shadow:0 4px 16px rgba(15,23,42,.04)}
+.card h3{font-size:1.05rem;font-weight:700;margin-bottom:.8rem}
+.tags{display:flex;flex-wrap:wrap;gap:.45rem;list-style:none;padding:0}
+.tags li{background:#eef3ff;color:#1d4ed8;font-size:.85rem;font-weight:500;padding:.25rem .7rem;border-radius:999px}
+.skillgroup + .skillgroup{margin-top:1.3rem}
+
+/* Timeline */
+.timeline{position:relative;padding-left:2rem;border-left:2px solid var(--line);display:grid;gap:1.5rem}
+.item{position:relative}
+.item::before{content:"";position:absolute;left:calc(-2rem - 7px);top:1.9rem;width:12px;height:12px;border-radius:50%;background:var(--blue);border:3px solid var(--bg);box-sizing:content-box}
+.alt .item::before{border-color:#fff}
+.item .top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1rem;align-items:baseline}
+.item h3{font-size:1.15rem;font-weight:700}
+.item .date{font-size:.85rem;font-weight:600;color:var(--blue);background:#eef3ff;padding:.2rem .7rem;border-radius:999px}
+.item .org{color:var(--muted);font-weight:500;margin:.15rem 0 .6rem}
+.item p{color:#33425a}
+
+/* Project */
+.project{display:grid;grid-template-columns:1fr 1.2fr;overflow:hidden;padding:0}
+.project .art{background:linear-gradient(135deg,var(--navy),#1d3a6e);display:grid;place-items:center;padding:2rem;min-height:260px}
+.project .art svg{width:100%;max-width:260px}
+.project .body{padding:2rem}
+.project h3{font-size:1.5rem;font-weight:800;letter-spacing:-.01em;margin-bottom:.3rem}
+.project .meta{color:var(--muted);font-size:.9rem;margin-bottom:1rem}
+.project p{color:#33425a;margin-bottom:1.1rem}
+
+/* Awards */
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.25rem}
+.award{position:relative;overflow:hidden}
+.award::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:linear-gradient(90deg,var(--blue),var(--cyan))}
+.award.gold::before{background:linear-gradient(90deg,#f59e0b,#fbbf24)}
+.award .when{font-size:.82rem;font-weight:600;color:var(--blue)}
+.award.gold .when{color:#b45309}
+.award h3{margin:.3rem 0 .5rem;font-size:1.1rem;line-height:1.35}
+.award p{color:var(--muted);font-size:.95rem}
+
+/* Certs */
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem;list-style:none;padding:0}
+.certs li{display:flex;gap:.9rem;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1rem 1.2rem}
+.certs svg{flex:none;width:22px;height:22px;color:var(--blue);margin-top:2px}
+.certs b{display:block;font-weight:600;font-size:.97rem;line-height:1.4}
+.certs span{color:var(--muted);font-size:.85rem}
+
+/* Contact */
+.contact{background:linear-gradient(180deg,var(--navy),var(--navy2));color:#fff;text-align:center}
+.contact h2{font-size:clamp(1.8rem,4vw,2.4rem);font-weight:800;letter-spacing:-.02em;margin-bottom:.8rem}
+.contact p{color:#b8c4d8;max-width:54ch;margin:0 auto 2rem}
+.contact .btns{justify-content:center}
+footer{background:#06101f;color:#7f90ab;text-align:center;padding:1.5rem;font-size:.88rem}
+
+@media (max-width:860px){
+  .hero .wrap,.about,.project{grid-template-columns:1fr}
+  .photo{order:-1;width:200px}
+  .stats .wrap{grid-template-columns:repeat(2,1fr)}
+  .logo{display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top">Engr. Abdullah<span>.</span></a>
+    <nav aria-label="Main">
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a>
+      <a href="#awards">Awards</a><a href="#education">Education</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <span class="badge">🏆 Open Doors Scholarship Winner · ITMO University 2026</span>
+      <h1>Engr. Abdullah</h1>
+      <h2>Electrical Engineer · AI &amp; Computer Vision · Automation &amp; Robotics</h2>
+      <p class="lead">Incoming Master's student at ITMO University, Saint Petersburg, building toward intelligent automation and digital manufacturing research.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">View my work</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/engr-abdullah-a7b11b251/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="photo" aria-label="Profile photo">
+      <div>A<img src="photo.jpg" alt="Engr. Abdullah" onerror="this.remove()"></div>
+    </div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><b>3</b><span>Scholarships and awards</span></div>
+    <div class="stat"><b>4</b><span>Engineering roles and internships</span></div>
+    <div class="stat"><b>8</b><span>Professional certifications</span></div>
+    <div class="stat"><b>YOLOv8</b><span>Real-time vision on Raspberry Pi 5</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <div class="head"><h2>About me</h2></div>
+      <p>I have been selected for a Master's degree at ITMO University in Saint Petersburg, Russia, in Automation of Technological Processes and Production, with a focus on Digital Technologies in Manufacturing.</p>
+      <p>My interests sit at the intersection of artificial intelligence, computer vision, automation, robotics and intelligent manufacturing. Alongside engineering, I have built practical skills in Python, MATLAB and computer networking, backed by certifications in Python (PCAP), Cisco CCNAv7 and Microsoft 365.</p>
+      <p>During my Master's I aim to build strong research and technical expertise, join international research projects, develop intelligent automation solutions and publish my work, in preparation for a PhD and international research opportunities.</p>
+    </div>
+    <div class="card">
+      <h3>Technical skills</h3>
+      <div class="skillgroup"><ul class="tags"><li>Python</li><li>MATLAB</li><li>Arduino</li></ul></div>
+      <div class="skillgroup"><ul class="tags"><li>YOLOv8</li><li>OpenCV</li><li>MediaPipe</li><li>Generative AI</li></ul></div>
+      <div class="skillgroup"><ul class="tags"><li>Embedded Systems</li><li>Raspberry Pi</li><li>CCNA</li><li>Telecommunications</li></ul></div>
+      <div class="skillgroup"><ul class="tags"><li>AutoCAD Electrical</li><li>MEP</li><li>Microsoft 365</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="alt">
+  <div class="wrap">
+    <div class="head"><h2>Experience</h2><p>Hands-on work across electrical site engineering, embedded systems and telecommunications.</p></div>
+    <div class="timeline">
+      <div class="item card">
+        <div class="top"><h3>Electrical Site Engineer</h3><span class="date">Jun 2026 – Present</span></div>
+        <div class="org">Cozmuler Engineering · Gulberg, Islamabad</div>
+        <p>Electrical site engineering using AutoCAD Electrical and MEP (mechanical, electrical, plumbing) coordination.</p>
+      </div>
+      <div class="item card">
+        <div class="top"><h3>Trainee Engineer</h3><span class="date">Jan 2026 – Jul 2026</span></div>
+        <div class="org">Pakistan Engineering Council · Islamabad</div>
+        <p>Completed the engineering internship program and earned the GET certificate.</p>
+      </div>
+      <div class="item card">
+        <div class="top"><h3>Embedded Systems Intern</h3><span class="date">Jan 2026 – May 2026</span></div>
+        <div class="org">National Electronics Complex · Islamabad, on-site</div>
+        <p>Worked on embedded systems and Arduino programming.</p>
+      </div>
+      <div class="item card">
+        <div class="top"><h3>Summer Intern</h3><span class="date">Aug 2023 – Oct 2023</span></div>
+        <div class="org">PTCL · Khyber Pakhtunkhwa, on-site</div>
+        <p>Gained exposure to telecommunications and switching systems.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="head"><h2>Featured project</h2></div>
+    <article class="card project">
+      <div class="art" aria-hidden="true">
+        <svg viewBox="0 0 260 150" fill="none" stroke="#8be3f5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="20" y="40" width="80" height="60" rx="30"/><rect x="160" y="40" width="80" height="60" rx="30"/>
+          <path d="M100 68h60M20 66L6 50M240 66l14-16"/><circle cx="60" cy="70" r="8" fill="#22b8d9"/><circle cx="200" cy="70" r="8" fill="#22b8d9"/>
+          <path d="M70 120c20 14 100 14 120 0" stroke-dasharray="2 8"/>
+        </svg>
+      </div>
+      <div class="body">
+        <h3>Virtual Eyes: Smart Glasses for the Blind</h3>
+        <div class="meta">Sep 2023 – Aug 2024 · University of Engineering &amp; Technology Peshawar · Team project with Khair Ul</div>
+        <p>An AI-powered wearable that helps visually impaired people through real-time object detection, text recognition and audio feedback. A camera, microphone and speakers are built into the glasses and run on a Raspberry Pi 5.</p>
+        <ul class="tags"><li>Raspberry Pi 5</li><li>YOLOv8</li><li>MediaPipe</li><li>OpenCV</li><li>Pytesseract</li><li>NumPy</li><li>pyttsx3</li></ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="awards" class="alt">
+  <div class="wrap">
+    <div class="head"><h2>Honors &amp; awards</h2></div>
+    <div class="grid3">
+      <div class="card award gold">
+        <span class="when">April 2026</span>
+        <h3>Winner, Open Doors Russian Scholarship Project</h3>
+        <p>Diploma of the Winner in Applied Mathematics and Artificial Intelligence, Master's track. Organized by the "Global Universities" Association.</p>
+      </div>
+      <div class="card award">
+        <span class="when">August 2021</span>
+        <h3>Ehsaas Undergraduate Scholarship</h3>
+        <p>Fully funded by HEC and UET Peshawar for Electrical Engineering. Merit-based award covering tuition and an annual living allowance.</p>
+      </div>
+      <div class="card award">
+        <span class="when">August 2020</span>
+        <h3>Stoori Da Pakhtunkhwa Scholarship</h3>
+        <p>Merit award from BISE Kohat for 8th position among government schools in the HSSC Science Group exam, with 928 of 1100 marks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="head"><h2>Education</h2></div>
+    <div class="timeline">
+      <div class="item card">
+        <div class="top"><h3>MSc, Automation of Technological Processes and Production</h3><span class="date">Starting 2026</span></div>
+        <div class="org">ITMO University · Saint Petersburg, Russia</div>
+        <p>Focus on Digital Technologies in Manufacturing.</p>
+      </div>
+      <div class="item card">
+        <div class="top"><h3>BSc, Electrical Engineering (Communication)</h3><span class="date">2020 – 2024</span></div>
+        <div class="org">University of Engineering &amp; Technology Peshawar</div>
+        <p>Studied communication systems with coursework and projects in Python and artificial intelligence.</p>
+      </div>
+      <div class="item card">
+        <div class="top"><h3>FSc, Pre-Engineering</h3><span class="date">2018 – 2020</span></div>
+        <div class="org">Govt Higher Secondary School Doaba</div>
+        <p>928 marks.</p>
+      </div>
+      <div class="item card">
+        <div class="top"><h3>Matric, Science</h3><span class="date">2016 – 2018</span></div>
+        <div class="org">Al Madina Public School Torawari</div>
+        <p>891 marks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certifications" class="alt">
+  <div class="wrap">
+    <div class="head"><h2>Licenses &amp; certifications</h2></div>
+    <ul class="certs" id="certlist"></ul>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Let's connect</h2>
+    <p>I'm open to research collaborations and international projects in AI, robotics and automation.</p>
+    <div class="btns"><a class="btn primary" href="https://www.linkedin.com/in/engr-abdullah-a7b11b251/" target="_blank" rel="noopener">Message me on LinkedIn</a></div>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 Engr. Abdullah · Peshawar, Khyber Pakhtunkhwa, Pakistan</footer>
+
+<script>
+const certs=[
+["Introduction to MATLAB Programming","Massachusetts Institute of Technology · Oct 2026"],
+["Young Engineers Personality Development Program","National Defence University · Jul 2026"],
+["Generative AI Application Developer","Pak Angels · Oct 2025"],
+["Introduction to Networks (CCNAv7)","Cisco Networking Academy · Dec 2023"],
+["Freelancing","DigiSkills.pk · Oct 2023"],
+["Microsoft 365 Fundamentals Specialization","Coursera · Jun 2023"],
+["English for Career Development","Coursera · Feb 2023"],
+["PCAP: Programming Essentials in Python","Cisco Networking Academy"]
+];
+const icon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 14.5L7 22l5-3 5 3-1.5-7.5"/></svg>';
+document.getElementById('certlist').innerHTML=certs.map(c=>`<li>${icon}<div><b>${c[0]}</b><span>${c[1]}</span></div></li>`).join('');
+</script>
+</body>
+</html>
